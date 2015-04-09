@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/cocos/base/CCDataVisitor.cpp \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/CCRef.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/CCPlatformMacros.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/ccConfig.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/CCPlatformConfig.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/CCPlatformDefine.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/ios/CCPlatformDefine-ios.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCBool.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/CCDataVisitor.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCInteger.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/CCConsole.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/ccMacros.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/CCStdC.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/ios/CCStdC-ios.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/ccRandom.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/platform/CCCommon.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCFloat.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCDouble.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCString.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCArray.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/ccCArray.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCDictionary.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/base/uthash.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../cocos/deprecated/CCSet.h

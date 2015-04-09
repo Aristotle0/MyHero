@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/external/Box2D/Dynamics/Joints/b2Joint.cpp \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2Joint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Common/b2Math.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Common/b2Settings.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2DistanceJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2WheelJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2MouseJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2PulleyJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2GearJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2WeldJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2FrictionJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2RopeJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/Joints/b2MotorJoint.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/b2Body.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Collision/Shapes/b2Shape.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Common/b2BlockAllocator.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Collision/b2Collision.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/b2World.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Common/b2StackAllocator.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/b2ContactManager.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Collision/b2BroadPhase.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Collision/b2DynamicTree.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Common/b2GrowableStack.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/b2WorldCallbacks.h \
+  /Users/lei/Work/game/projects/MyHero/cocos2d/build/../external/Box2D/Dynamics/b2TimeStep.h
