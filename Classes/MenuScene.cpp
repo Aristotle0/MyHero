@@ -1,4 +1,5 @@
 #include "MenuScene.h"
+#include "TestScene.h"
 #include <string>
 USING_NS_CC;
 
@@ -42,29 +43,24 @@ bool MenuScene::init() {
 
     auto label1 = LabelBMFont::create("START", fileMenu);
     auto item1 = MenuItemLabel::create(label1);
-    label1->setPosition(Vec2(origin.x + visibleSize.width/2,
+    item1->setCallback([&](Ref* sender) {
+        Director::getInstance()->replaceScene(TransitionTurnOffTiles::create(0.5f, TestScene::createScene()));
+    });
+    item1->setPosition(Vec2(origin.x + visibleSize.width/2,
         origin.y + visibleSize.height - label1->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item1);
 
     auto label2 = LabelBMFont::create("OPTIONS", fileMenu);
     auto item2 = MenuItemLabel::create(label2);
-    label2->setPosition(Vec2(origin.x + visibleSize.width/2,
+    item2->setPosition(Vec2(origin.x + visibleSize.width/2,
         origin.y + visibleSize.height - label2->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item2);
 
     auto label3 = LabelBMFont::create("EXIT", fileMenu);
     auto item3 = MenuItemLabel::create(label3, CC_CALLBACK_1(MenuScene::menuCloseCallback, this));
-    label3->setPosition(Vec2(origin.x + visibleSize.width/2,
+    item3->setPosition(Vec2(origin.x + visibleSize.width/2,
         origin.y + visibleSize.height- label3->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item3);
-
-    auto closeItem = MenuItemImage::create(
-                                           "CloseNormal.png",
-                                           "CloseSelected.png",
-                                           CC_CALLBACK_1(MenuScene::menuCloseCallback, this));
-    closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
-                                origin.y + closeItem->getContentSize().height/2));
-    MenuItems.pushBack(closeItem);
     
     auto menus = Menu::createWithArray(MenuItems);
     menus->setPosition(Vec2::ZERO);

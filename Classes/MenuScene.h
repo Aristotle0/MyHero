@@ -1,5 +1,5 @@
-#ifndef MENUSCENE_H_
-#define MENUSCENE_H_
+#ifndef MYHERO_MENUSCENE_H_
+#define MYHERO_MENUSCENE_H_
 
 #include "cocos2d.h"
 
