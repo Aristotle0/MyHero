@@ -1,5 +1,5 @@
 #include "MenuScene.h"
-
+#include <string>
 USING_NS_CC;
 
 Scene* MenuScene::createScene() {
@@ -24,37 +24,57 @@ bool MenuScene::init() {
     this->addChild(bgFigure, 0);
 
     // label
-    auto label = LabelTTF::create("My Hero", "fonts/Marker Felt.ttf", 128);
+    // auto label = LabelTTF::create("My Hero", "fonts/Marker Felt.ttf", 128);
+    // label->setPosition(Vec2(origin.x + visibleSize.width/2,
+    //    origin.y + visibleSize.height - label->getContentSize().height));
+    // this->addChild(label, 1);
+    
+    auto label = LabelBMFont::create("My Hero", "fonts/title.fnt");
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
-        origin.y + visibleSize.height - label->getContentSize().height));
+                            origin.y + visibleSize.height - label->getContentSize().height));
     this->addChild(label, 1);
 
     // menus
     Vector<MenuItem*> MenuItems;
-    int index = 2;
+    int index = 0;
+    int step = 100;
+    std::string fileMenu = "fonts/Menu_normal.fnt";
 
-    auto label1 = LabelTTF::create("START", "Marker Felt.ttf", 56);
+    auto label1 = LabelBMFont::create("START", fileMenu);
     auto item1 = MenuItemLabel::create(label1);
     label1->setPosition(Vec2(origin.x + visibleSize.width/2,
-        origin.y + visibleSize.height - label1->getContentSize().height - (++index)*80));
+        origin.y + visibleSize.height - label1->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item1);
 
-    auto label2 = LabelTTF::create("OPTIONS", "Marker Felt.ttf", 56);
+    auto label2 = LabelBMFont::create("OPTIONS", fileMenu);
     auto item2 = MenuItemLabel::create(label2);
     label2->setPosition(Vec2(origin.x + visibleSize.width/2,
-        origin.y + visibleSize.height - label2->getContentSize().height - (++index)*80));
+        origin.y + visibleSize.height - label2->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item2);
 
-    auto label3 = LabelTTF::create("EXIT", "Marker Felt.ttf", 56);
-    auto item3 = MenuItemLabel::create(label3);
+    auto label3 = LabelBMFont::create("EXIT", fileMenu);
+    auto item3 = MenuItemLabel::create(label3, CC_CALLBACK_1(MenuScene::menuCloseCallback, this));
     label3->setPosition(Vec2(origin.x + visibleSize.width/2,
-        origin.y + visibleSize.height- label3->getContentSize().height - (++index)*80));
+        origin.y + visibleSize.height- label3->getContentSize().height - label->getContentSize().height - (++index)*step));
     MenuItems.pushBack(item3);
 
+    auto closeItem = MenuItemImage::create(
+                                           "CloseNormal.png",
+                                           "CloseSelected.png",
+                                           CC_CALLBACK_1(MenuScene::menuCloseCallback, this));
+    closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+                                origin.y + closeItem->getContentSize().height/2));
+    MenuItems.pushBack(closeItem);
+    
     auto menus = Menu::createWithArray(MenuItems);
     menus->setPosition(Vec2::ZERO);
     this->addChild(menus, 1);
 
     return true;
+}
+
+void MenuScene::menuCloseCallback(Ref *sender) {
+    Director::getInstance()->end();
+    exit(0);
 }
 
