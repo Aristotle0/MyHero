@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "MenuScene.h"
+#include <vector>
+#include <string>
 
 USING_NS_CC;
 
@@ -38,6 +40,14 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
+    // resolution
+    glview->setDesignResolutionSize(480.f, 320.f, ResolutionPolicy::FIXED_HEIGHT);
+//    std::vector<std::string> searchPath;
+//    searchPath.push_back("height_681");
+//    CCFileUtils::getInstance()->setSearchPaths(searchPath);
+//    director->setContentScaleFactor(681.f/320.f);
+    
+    
     // turn on display FPS
     director->setDisplayStats(true);
 

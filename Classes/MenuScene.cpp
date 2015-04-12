@@ -4,6 +4,7 @@
 USING_NS_CC;
 
 Scene* MenuScene::createScene() {
+    Director::getInstance()->setContentScaleFactor(681.f/320.f);
     auto scene = Scene::create();
     auto layer = MenuScene::create();
     scene->addChild(layer);
@@ -38,13 +39,13 @@ bool MenuScene::init() {
     // menus
     Vector<MenuItem*> MenuItems;
     int index = 0;
-    int step = 100;
+    int step = 40;
     std::string fileMenu = "fonts/Menu_normal.fnt";
 
     auto label1 = LabelBMFont::create("START", fileMenu);
     auto item1 = MenuItemLabel::create(label1);
     item1->setCallback([&](Ref* sender) {
-        Director::getInstance()->replaceScene(TransitionTurnOffTiles::create(0.5f, TestScene::createScene()));
+        Director::getInstance()->replaceScene(TransitionTurnOffTiles::create(0.2f, TestScene::createScene()));
     });
     item1->setPosition(Vec2(origin.x + visibleSize.width/2,
         origin.y + visibleSize.height - label1->getContentSize().height - label->getContentSize().height - (++index)*step));
