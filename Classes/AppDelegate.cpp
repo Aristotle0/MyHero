@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "MenuScene.h"
+#include "TestScene.h"
 #include <vector>
 #include <string>
 
@@ -57,8 +58,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = MenuScene::createScene();
-
+    //auto scene = MenuScene::createScene();
+    auto scene = TestScene::createScene();
     // run
     director->runWithScene(scene);
 

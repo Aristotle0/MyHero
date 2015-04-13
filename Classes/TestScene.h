@@ -1,13 +1,14 @@
 #ifndef MYHERO_TESTSCENE_H_
 #define MYHERO_TESTSCENE_H_
 
-#include "cocos2d.h"
+USING_NS_CC;
 
-class TestScene : public cocos2d::Layer {
+class TestScene : public Layer {
 public:
-    static cocos2d::Scene* createScene();
+    static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(TestScene);
+    Point convertPointToTiledPoint(Point touchpoint, TMXTiledMap *map);
 };
 
 
